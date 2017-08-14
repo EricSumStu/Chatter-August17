@@ -4,17 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ezcolth.ericssonproject.profile">
-
-    <TextView
-        android:id="@+id/placeholder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Placeholder"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context="com.example.ezcolth.ericssonproject.profile"
+    android:background="#FFE4B5"
+    >
 
     <LinearLayout
         android:layout_width="190dp"
@@ -36,8 +28,8 @@
 
         <EditText
             android:id="@+id/pDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="170dp"
+            android:layout_height="167dp"
             android:ems="10"
             android:hint="Description"
             android:inputType="textMultiLine" />
@@ -64,25 +56,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:text="ProfilePic"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="258dp" />
-
     <Button
         android:id="@+id/changeProfilePic"
         android:layout_width="110dp"
         android:layout_height="35dp"
         android:text="Change"
         android:textAlignment="center"
-        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="141dp" />
+        tools:layout_editor_absoluteY="134dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteY="-4dp"
+        tools:layout_editor_absoluteX="124dp" />
 </android.support.constraint.ConstraintLayout>
