@@ -9,8 +9,9 @@
     </style>
 
     <style name="orange" parent="AppTheme" >
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@android:color/holo_red_dark</item>
         <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
     </style>
 
 </resources>
