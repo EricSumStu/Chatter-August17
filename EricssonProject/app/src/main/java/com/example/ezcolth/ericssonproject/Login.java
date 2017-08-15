@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity
         boolean isValid = checkValid(sEmail, sPassword);
         if(isValid)
         {
-            Intent intent = new Intent(this, ChatScreen.class);
+            Intent intent = new Intent(Login.this, MainMenu.class);
             startActivity(intent);
         }
         else

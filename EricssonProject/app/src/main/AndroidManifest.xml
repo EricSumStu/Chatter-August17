@@ -19,12 +19,14 @@
         <activity android:name=".SignUp" />
         <activity android:name=".profile" />
         <activity android:name=".Pop" />
-        <activity android:name=".ChatScreen" />
+        <activity android:name=".MainMenu" />
         <activity android:name=".Login" />
         <activity android:name=".Settings" />
         <activity android:name=".TermsAndConditions" />
         <activity android:name=".changePassword" />
-        <activity android:name=".authentication"></activity>
+        <activity android:name=".authentication" />
+        <activity android:name=".MessageScreen1" />
+        <activity android:name=".MessageScreen"></activity>
     </application>
 
 </manifest>

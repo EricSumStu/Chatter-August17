@@ -92,7 +92,7 @@ public class authentication extends AppCompatActivity
 
                     usersRef.setValue(users);
                   //  FirebaseDatabase.getInstance().getReference().push().setValue(new UserProfile(fullName,email,password,description));
-                    Intent nextIntent = new Intent(getApplicationContext(), ChatScreen.class);
+                    Intent nextIntent = new Intent(getApplicationContext(), MainMenu.class);
                     startActivity(nextIntent);
                 }
                 else

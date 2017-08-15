@@ -43,7 +43,7 @@ public class profile extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent androidsolved_intent = new Intent(getApplicationContext(), ChatScreen.class);
+                Intent androidsolved_intent = new Intent(getApplicationContext(), MainMenu.class);
                 startActivity(androidsolved_intent);
             }
         });
