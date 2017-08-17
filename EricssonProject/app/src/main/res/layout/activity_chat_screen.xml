@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ezcolth.ericssonproject.ChatScreen">
+    tools:context="com.example.ezcolth.ericssonproject.ChatScreen"
+    android:background="#FFE4B5"
+    >
 
     <ListView
         android:id="@+id/listView"
