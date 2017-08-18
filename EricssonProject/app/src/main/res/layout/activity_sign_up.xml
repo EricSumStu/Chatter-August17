@@ -17,6 +17,8 @@
         android:layout_marginTop="447dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="next"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,11 +26,13 @@
         android:id="@+id/backSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="-4dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="return"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,41 +40,40 @@
         android:id="@+id/suError"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="40dp"
         android:text="ERROR THE PASSWORDS DO NOT MATCH"
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.134" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/android"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="-17dp" />
-
-    <EditText
-        android:id="@+id/suDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:hint="Description"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="339dp" />
+        app:srcCompat="@drawable/an2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/suError"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="119dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="216dp"
-        android:layout_height="297dp"
+        android:layout_width="230dp"
+        android:layout_height="239dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742">
+        app:layout_constraintVertical_bias="0.764">
 
         <EditText
             android:id="@+id/suFullName"
@@ -89,22 +92,29 @@
             android:inputType="textEmailAddress" />
 
         <EditText
+            android:id="@+id/suPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName" />
+
+        <EditText
             android:id="@+id/suPassRepeat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Repeat Password"
-            android:inputType="textPassword" />
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/suDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Bio"
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/suPass"
-        android:layout_width="207dp"
-        android:layout_height="53dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="286dp" />
 </android.support.constraint.ConstraintLayout>

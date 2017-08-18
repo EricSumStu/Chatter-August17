@@ -54,7 +54,7 @@ public class MainMenu extends AppCompatActivity
         profileButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
+            public void onClick(View profileView)
             {
                 Intent profileIntent = new Intent(getApplicationContext(), profile.class);
                 startActivity(profileIntent);
@@ -63,7 +63,7 @@ public class MainMenu extends AppCompatActivity
         settingButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
+            public void onClick(View settingView)
             {
                 Intent settingIntent = new Intent(getApplicationContext(), Settings.class);
                 startActivity(settingIntent);

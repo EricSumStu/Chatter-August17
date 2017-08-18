@@ -14,7 +14,7 @@ public class profile extends AppCompatActivity
 {
     String nameArray = "Tom";
     String desArray = "sdkj";
-    Button backButton;
+    //Button backButton;
     Button saveButton;
     EditText fullNameEdit;
     EditText descriptionEdit;
@@ -35,10 +35,10 @@ public class profile extends AppCompatActivity
         popUpWindow = new PopupWindow(this);
         isClicked = true;
 
-        backButton = (Button) findViewById(R.id.backProfile);
+       // backButton = (Button) findViewById(R.id.backProfile);
         saveButton = (Button) findViewById(R.id.saveChanges);
 
-        backButton.setOnClickListener(new View.OnClickListener()
+        /*backButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -47,6 +47,7 @@ public class profile extends AppCompatActivity
                 startActivity(androidsolved_intent);
             }
         });
+        */
         saveButton.setOnClickListener(new View.OnClickListener()
         {
             @Override

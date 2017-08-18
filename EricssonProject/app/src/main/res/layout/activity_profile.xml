@@ -10,38 +10,42 @@
 
     <Button
         android:id="@+id/saveChanges"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="229dp"
-        android:layout_marginTop="447dp"
+        android:layout_width="392dp"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_red_dark"
         android:text="Save Changes"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/backProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:text="return"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteY="463dp"
+        tools:layout_editor_absoluteX="-1dp"
+        app:layout_constraintHorizontal_bias="0.416" />
 
     <Button
         android:id="@+id/changeProfilePic"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
+        android:layout_width="99dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="Change"
         android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.332" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -49,44 +53,47 @@
         android:layout_height="138dp"
         app:srcCompat="@drawable/profile"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.022"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="16dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.965" />
-
-    <EditText
-        android:id="@+id/pDescription"
-        android:layout_width="170dp"
-        android:layout_height="167dp"
-        android:ems="10"
-        android:hint="Description"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="-240dp"
-        tools:layout_editor_absoluteY="35dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.094" />
 
     <LinearLayout
-        android:layout_width="190dp"
-        android:layout_height="253dp"
+        android:layout_width="217dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751"
-        app:layout_constraintHorizontal_bias="0.417">
+        app:layout_constraintVertical_bias="0.653">
 
         <EditText
             android:id="@+id/pFullName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="46dp"
             android:ems="10"
             android:hint="Full Name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="324dp" />
 
+        <EditText
+            android:id="@+id/pDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Bio"
+            android:inputType="textPersonName" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

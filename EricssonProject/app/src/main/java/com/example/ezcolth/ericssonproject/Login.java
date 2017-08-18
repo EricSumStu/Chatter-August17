@@ -23,7 +23,7 @@ public class Login extends AppCompatActivity
 
     public void onButtonClick(View view)
     {
-        EditText editEmail = (EditText)findViewById(R.id.editText3);
+        EditText editEmail = (EditText)findViewById(R.id.editText);
         EditText editPass = (EditText)findViewById(R.id.editText2);
         String sEmail = editEmail.getText().toString();
         String sPassword = editPass.getText().toString();
